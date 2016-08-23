@@ -1,0 +1,9 @@
+{
+  "name": "Thrive-themepack-project",
+  "version": "1.8.2",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-sass": "^1.2.1"
+  }
+}

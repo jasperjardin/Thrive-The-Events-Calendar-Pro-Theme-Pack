@@ -1,0 +1,403 @@
+.themepack_material_font_before {
+    &:before {
+        @include material_font('');
+    }
+}
+.themepack_material_font_after {
+    &:after {
+        @include material_font('');
+    }
+}
+
+body {
+    &.thrive-inline {
+
+        #tribe-bar-form {
+            #tribe-bar-views {
+                .tribe-bar-views-list {
+                    height: auto;
+                    max-height: 0;
+                    -webkit-transition: max-height 0.5s ease-in-out, height 0.75s ease-in-out;
+                    -moz-transition: max-height 0.5s ease-in-out, height 0.75s ease-in-out;
+                    transition: max-height 0.5s ease-in-out, height 0.75s ease-in-out;
+                }
+
+                &.tribe-bar-views-open {
+                    .tribe-bar-views-list {
+                        height: auto;
+                        max-height: 500px;
+                        -webkit-transition: max-height 0.75s ease-in-out, height 0.75s ease-in-out;
+                        -moz-transition: max-height 0.75s ease-in-out, height 0.75s ease-in-out;
+                        transition: max-height 0.75s ease-in-out, height 0.75s ease-in-out;
+                    }
+                }
+            }
+
+            .tribe-bar-views-list {
+                .tribe-bar-views-option {
+                    padding: 0;
+                    a {
+                        padding-bottom: 10px;
+                        &:hover {
+                            background: #F5F5F5;
+                        }
+                    }
+                    &.tribe-bar-views-option-week,
+                    &.tribe-bar-views-option-map,
+                    &.tribe-bar-views-option-photo {
+                        span {
+                            &:before {
+                                @extend .themepack_material_font_before;
+                                position: relative;
+                                top: 7.5px;
+                            }
+                        }
+                    }
+
+                    &.tribe-bar-views-option-week span:before {
+                        content: "date_range";
+                    }
+                    &.tribe-bar-views-option-map span:before {
+                        content: "place";
+                    }
+                    &.tribe-bar-views-option-photo span:before {
+                        content: "image";
+                    }
+                }
+            }
+
+        }
+
+    } // .thrive-inline
+
+    .tribe-bar-collapse {
+        #tribe-bar-collapse-toggle {
+            width: 49%;
+
+            &.tribe-bar-filters-open + #tribe-bar-views + .tribe-bar-filters {
+                height: auto;
+                max-height: 500px;
+                margin-top: 0;
+                -webkit-transition: max-height 0.75s ease-in-out, height 0.75s ease-in-out;
+                   -moz-transition: max-height 0.75s ease-in-out, height 0.75s ease-in-out;
+                        transition: max-height 0.75s ease-in-out, height 0.75s ease-in-out;
+            }
+            + #tribe-bar-views + .tribe-bar-filters {
+                width: auto;
+                max-width: 49%;
+                height: auto;
+                max-height: 0;
+                -webkit-transition: max-height 0.5s ease-in-out, height 0.75s ease-in-out;
+                   -moz-transition: max-height 0.5s ease-in-out, height 0.75s ease-in-out;
+                        transition: max-height 0.5s ease-in-out, height 0.75s ease-in-out;
+            }
+        }
+    }
+
+    #tribe-bar-form {
+         #tribe-bar-views+.tribe-bar-filters {
+             width: auto;
+             max-width: 49%;
+         }
+
+        .tribe-bar-filters-inner {
+            position: relative;
+            div[class^=tribe-bar-] {
+                padding: 0;
+            }
+        }
+    }
+
+    &.events-archive .entry-content,
+    &.events-archive .entry-header {
+        width: 100%;
+    }
+
+} // body
+
+form {
+    &#tribe-bar-form {
+        background: transparent;
+
+        &.tribe-bar-collapse #tribe-bar-views {
+            float: right;
+            .tribe-bar-views-inner {
+                padding: 0;
+            }
+        }
+
+        .tribe-bar-views-list {
+            span[class^=tribe-icon-] {
+                padding-left: 0;
+                background-size: 0;
+            }
+        }
+    }
+}
+
+#tribe-events-content-wrapper {
+    #tribe-events-content #tribe-events-footer ul li {
+        width: 48%;
+    }
+    #tribe-events-day {
+        padding: 0;
+    }
+
+    .tribe-events-event-image {
+        margin-bottom: 15px;
+    }
+
+    // Week View
+    .tribe-events-week-grid {
+        .tribe-grid-header {
+            background-color: #03A9F4;
+            border: none;
+            .tribe-week-today {
+                background: #0288d1;
+            }
+            .column {
+                border-left: none;
+            }
+        }
+    }
+    .tribe-grid-allday .tribe-events-week-allday-single,
+    .tribe-grid-body .tribe-events-week-hourly-single {
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid #e0e0e0;
+
+        -webkit-border-radius: 0;
+           -moz-border-radius: 0;
+                border-radius: 0;
+
+        a {
+            color: #0288d1;
+        }
+    }
+
+    // Map View
+    #tribe-geo-results {
+        .type-tribe_events.tribe-events-first {
+            padding-top: 25px;
+        }
+    }
+    .tribe-events-list .tribe-events-loop {
+        .tribe-events-event-image+div.tribe-events-content {
+            width: 67%;
+        }
+        .tribe-events-content {
+            width: 100%;
+        }
+    }
+
+    // Photo View
+    #tribe-events-photo-events  {
+        .type-tribe_events {
+            &.tribe-events-photo-event {
+                border: 1px solid rgba(0, 0, 0, 0.12);
+
+                &:nth-child(3n) {
+                    margin-right: 0;
+                }
+
+                .tribe-events-photo-event-wrap {
+                    background: transparent;
+
+                    -webkit-transition: all 0.25s ease-in-out;
+                       -moz-transition: all 0.25s ease-in-out;
+                            transition: all 0.25s ease-in-out;
+                    &:hover {
+                        box-shadow: 0 3px 12px rgba(0, 0, 0, 0.23), 0 3px 12px rgba(0, 0, 0, 0.16);
+                    }
+                }
+
+                .tribe-events-event-image {
+                    width: 100%;
+                    img:hover {
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Single Events
+.single-tribe_events {
+
+    #tribe-events-content {
+        .tribe-events-event-meta {
+            color: rgba(0, 0, 0, 0.54);
+        }
+        .tribe-events-event-meta {
+            dl {
+                dt {
+                    margin-bottom: 5px;
+                }
+                dd {
+                    margin-bottom: 25px;
+                }
+            }
+        }
+        #tribe-events-footer ul li {
+            width: 48%;
+        }
+    }
+}
+
+// Disable the Event Search Bar
+.events-list.tribe-bar-is-disabled {
+    #tribe-events-content-wrapper {
+        max-width: none;
+    }
+    .tribe-bar-disabled {
+        float: none;
+
+        #tribe-bar-collapse-toggle {
+            display: none;
+        }
+        #tribe-bar-form #tribe-bar-views {
+            width: 100%;
+        }
+        .tribe-bar-filters {
+            display: none;
+        }
+    }
+}
+
+// Events Image
+.tribe-events-list {
+    .tribe-events-loop {
+        .tribe-events-content {
+            padding-right: 0;
+        }
+        .tribe-events-event-image {
+            width: 30%;
+        }
+    }
+}
+
+
+// Widgets
+.sidebar-widgets {
+    &.tribe_mini_calendar_widget {
+        table,
+        thead,
+        tbody,
+        tr, {
+            display: inline-block;
+            width: 100%;
+        }
+        th,
+        td {
+            display: inline-block;
+            float: left;
+        }
+
+        table {
+            margin-top: 0;
+
+            th {
+                background: transparent;
+            }
+
+            .tribe-mini-calendar-nav {
+                border: none;
+                background: transparent;
+            }
+        }
+    }
+}
+
+#content,
+#dashboard-widgets,
+.thrive-layout-2_columns #user-content-widget-sidenav #page-sidebar-widgets,
+#thrive_footer_widget .footer-widget {
+    .tribe_mini_calendar_widget {
+        table {
+            border: 1px solid rgba(0, 0, 0, 0.12);
+            border-bottom: none;
+
+            background: #fff;
+            th {
+                background: transparent;
+                padding: 10px;
+            }
+            .tribe-mini-calendar-nav {
+                border: none;
+            }
+
+            thead {
+                background: transparent;
+            }
+            tr {
+                border: none;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+                &:hover {
+                    background: transparent;
+                }
+                td {
+                    height: auto;
+                    min-height: 40px;
+                    background: transparent;
+                    line-height: 40px;
+                    padding: 0;
+                    margin-bottom: 0;
+                    border: none;
+
+                    .tribe-mini-calendar-no-event,
+                    a {
+                        color: rgba(0, 0, 0, 0.54);
+                        padding: 0;
+                        font-weight: normal;
+                    }
+                    a:hover {
+                        text-decoration: none;
+                    }
+
+                    &.tribe-events-has-events.tribe-events-present a,
+                    &.tribe-events-has-events.tribe-mini-calendar-today a,
+                    &.tribe-events-has-events:hover a {
+                        &:hover {
+                            background: transparent;
+                        }
+                    }
+
+                    &.tribe-events-has-events a {
+                        color: rgba(0, 0, 0, 0.54);
+                        &:before {
+                            background: rgba(0, 0, 0, 0.54);
+                        }
+                    }
+
+                    &.tribe-events-present a {
+                        color: #03a9f4;
+                        &:before {
+                            background: #03a9f4;
+                        }
+                    }
+
+                }
+            }
+            th {
+                color: rgba(0, 0, 0, 0.54);
+                margin-bottom: 0;
+                border: none;
+            }
+            .tribe-mini-calendar-nav {
+                tr {
+                    background: transparent;
+                    td {
+                        width: 100%;
+                        background: transparent;
+                        margin-bottom: 0;
+                        border: none;
+                        span {
+                            color: rgba(0, 0, 0, 0.54);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

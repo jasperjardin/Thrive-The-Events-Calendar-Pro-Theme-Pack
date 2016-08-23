@@ -1,0 +1,461 @@
+.themepack_material_font_before:before, body.thrive-inline #tribe-bar-form .tribe-bar-views-list .tribe-bar-views-option.tribe-bar-views-option-week span:before, body.thrive-inline #tribe-bar-form .tribe-bar-views-list .tribe-bar-views-option.tribe-bar-views-option-map span:before, body.thrive-inline #tribe-bar-form .tribe-bar-views-list .tribe-bar-views-option.tribe-bar-views-option-photo span:before {
+  content: "";
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  line-height: 1em;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.themepack_material_font_after:after {
+  content: "";
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  line-height: 1em;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+body.thrive-inline #tribe-bar-form #tribe-bar-views .tribe-bar-views-list {
+  height: auto;
+  max-height: 0;
+  -webkit-transition: max-height 0.5s ease-in-out, height 0.75s ease-in-out;
+  -moz-transition: max-height 0.5s ease-in-out, height 0.75s ease-in-out;
+  transition: max-height 0.5s ease-in-out, height 0.75s ease-in-out;
+}
+
+body.thrive-inline #tribe-bar-form #tribe-bar-views.tribe-bar-views-open .tribe-bar-views-list {
+  height: auto;
+  max-height: 500px;
+  -webkit-transition: max-height 0.75s ease-in-out, height 0.75s ease-in-out;
+  -moz-transition: max-height 0.75s ease-in-out, height 0.75s ease-in-out;
+  transition: max-height 0.75s ease-in-out, height 0.75s ease-in-out;
+}
+
+body.thrive-inline #tribe-bar-form .tribe-bar-views-list .tribe-bar-views-option {
+  padding: 0;
+}
+
+body.thrive-inline #tribe-bar-form .tribe-bar-views-list .tribe-bar-views-option a {
+  padding-bottom: 10px;
+}
+
+body.thrive-inline #tribe-bar-form .tribe-bar-views-list .tribe-bar-views-option a:hover {
+  background: #F5F5F5;
+}
+
+body.thrive-inline #tribe-bar-form .tribe-bar-views-list .tribe-bar-views-option.tribe-bar-views-option-week span:before, body.thrive-inline #tribe-bar-form .tribe-bar-views-list .tribe-bar-views-option.tribe-bar-views-option-map span:before, body.thrive-inline #tribe-bar-form .tribe-bar-views-list .tribe-bar-views-option.tribe-bar-views-option-photo span:before {
+  position: relative;
+  top: 7.5px;
+}
+
+body.thrive-inline #tribe-bar-form .tribe-bar-views-list .tribe-bar-views-option.tribe-bar-views-option-week span:before {
+  content: "date_range";
+}
+
+body.thrive-inline #tribe-bar-form .tribe-bar-views-list .tribe-bar-views-option.tribe-bar-views-option-map span:before {
+  content: "place";
+}
+
+body.thrive-inline #tribe-bar-form .tribe-bar-views-list .tribe-bar-views-option.tribe-bar-views-option-photo span:before {
+  content: "image";
+}
+
+body .tribe-bar-collapse #tribe-bar-collapse-toggle {
+  width: 49%;
+}
+
+body .tribe-bar-collapse #tribe-bar-collapse-toggle.tribe-bar-filters-open + #tribe-bar-views + .tribe-bar-filters {
+  height: auto;
+  max-height: 500px;
+  margin-top: 0;
+  -webkit-transition: max-height 0.75s ease-in-out, height 0.75s ease-in-out;
+  -moz-transition: max-height 0.75s ease-in-out, height 0.75s ease-in-out;
+  transition: max-height 0.75s ease-in-out, height 0.75s ease-in-out;
+}
+
+body .tribe-bar-collapse #tribe-bar-collapse-toggle + #tribe-bar-views + .tribe-bar-filters {
+  width: auto;
+  max-width: 49%;
+  height: auto;
+  max-height: 0;
+  -webkit-transition: max-height 0.5s ease-in-out, height 0.75s ease-in-out;
+  -moz-transition: max-height 0.5s ease-in-out, height 0.75s ease-in-out;
+  transition: max-height 0.5s ease-in-out, height 0.75s ease-in-out;
+}
+
+body #tribe-bar-form #tribe-bar-views + .tribe-bar-filters {
+  width: auto;
+  max-width: 49%;
+}
+
+body #tribe-bar-form .tribe-bar-filters-inner {
+  position: relative;
+}
+
+body #tribe-bar-form .tribe-bar-filters-inner div[class^=tribe-bar-] {
+  padding: 0;
+}
+
+body.events-archive .entry-content,
+body.events-archive .entry-header {
+  width: 100%;
+}
+
+form#tribe-bar-form {
+  background: transparent;
+}
+
+form#tribe-bar-form.tribe-bar-collapse #tribe-bar-views {
+  float: right;
+}
+
+form#tribe-bar-form.tribe-bar-collapse #tribe-bar-views .tribe-bar-views-inner {
+  padding: 0;
+}
+
+form#tribe-bar-form .tribe-bar-views-list span[class^=tribe-icon-] {
+  padding-left: 0;
+  background-size: 0;
+}
+
+#tribe-events-content-wrapper #tribe-events-content #tribe-events-footer ul li {
+  width: 48%;
+}
+
+#tribe-events-content-wrapper #tribe-events-day {
+  padding: 0;
+}
+
+#tribe-events-content-wrapper .tribe-events-event-image {
+  margin-bottom: 15px;
+}
+
+#tribe-events-content-wrapper .tribe-events-week-grid .tribe-grid-header {
+  background-color: #03A9F4;
+  border: none;
+}
+
+#tribe-events-content-wrapper .tribe-events-week-grid .tribe-grid-header .tribe-week-today {
+  background: #0288d1;
+}
+
+#tribe-events-content-wrapper .tribe-events-week-grid .tribe-grid-header .column {
+  border-left: none;
+}
+
+#tribe-events-content-wrapper .tribe-grid-allday .tribe-events-week-allday-single,
+#tribe-events-content-wrapper .tribe-grid-body .tribe-events-week-hourly-single {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #e0e0e0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+
+#tribe-events-content-wrapper .tribe-grid-allday .tribe-events-week-allday-single a,
+#tribe-events-content-wrapper .tribe-grid-body .tribe-events-week-hourly-single a {
+  color: #0288d1;
+}
+
+#tribe-events-content-wrapper #tribe-geo-results .type-tribe_events.tribe-events-first {
+  padding-top: 25px;
+}
+
+#tribe-events-content-wrapper .tribe-events-list .tribe-events-loop .tribe-events-event-image + div.tribe-events-content {
+  width: 67%;
+}
+
+#tribe-events-content-wrapper .tribe-events-list .tribe-events-loop .tribe-events-content {
+  width: 100%;
+}
+
+#tribe-events-content-wrapper #tribe-events-photo-events .type-tribe_events.tribe-events-photo-event {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+#tribe-events-content-wrapper #tribe-events-photo-events .type-tribe_events.tribe-events-photo-event:nth-child(3n) {
+  margin-right: 0;
+}
+
+#tribe-events-content-wrapper #tribe-events-photo-events .type-tribe_events.tribe-events-photo-event .tribe-events-photo-event-wrap {
+  background: transparent;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+#tribe-events-content-wrapper #tribe-events-photo-events .type-tribe_events.tribe-events-photo-event .tribe-events-photo-event-wrap:hover {
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.23), 0 3px 12px rgba(0, 0, 0, 0.16);
+}
+
+#tribe-events-content-wrapper #tribe-events-photo-events .type-tribe_events.tribe-events-photo-event .tribe-events-event-image {
+  width: 100%;
+}
+
+#tribe-events-content-wrapper #tribe-events-photo-events .type-tribe_events.tribe-events-photo-event .tribe-events-event-image img:hover {
+  box-shadow: none;
+}
+
+.single-tribe_events #tribe-events-content .tribe-events-event-meta {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.single-tribe_events #tribe-events-content .tribe-events-event-meta dl dt {
+  margin-bottom: 5px;
+}
+
+.single-tribe_events #tribe-events-content .tribe-events-event-meta dl dd {
+  margin-bottom: 25px;
+}
+
+.single-tribe_events #tribe-events-content #tribe-events-footer ul li {
+  width: 48%;
+}
+
+.events-list.tribe-bar-is-disabled #tribe-events-content-wrapper {
+  max-width: none;
+}
+
+.events-list.tribe-bar-is-disabled .tribe-bar-disabled {
+  float: none;
+}
+
+.events-list.tribe-bar-is-disabled .tribe-bar-disabled #tribe-bar-collapse-toggle {
+  display: none;
+}
+
+.events-list.tribe-bar-is-disabled .tribe-bar-disabled #tribe-bar-form #tribe-bar-views {
+  width: 100%;
+}
+
+.events-list.tribe-bar-is-disabled .tribe-bar-disabled .tribe-bar-filters {
+  display: none;
+}
+
+.tribe-events-list .tribe-events-loop .tribe-events-content {
+  padding-right: 0;
+}
+
+.tribe-events-list .tribe-events-loop .tribe-events-event-image {
+  width: 30%;
+}
+
+.sidebar-widgets.tribe_mini_calendar_widget table,
+.sidebar-widgets.tribe_mini_calendar_widget thead,
+.sidebar-widgets.tribe_mini_calendar_widget tbody,
+.sidebar-widgets.tribe_mini_calendar_widget tr {
+  display: inline-block;
+  width: 100%;
+}
+
+.sidebar-widgets.tribe_mini_calendar_widget th,
+.sidebar-widgets.tribe_mini_calendar_widget td {
+  display: inline-block;
+  float: left;
+}
+
+.sidebar-widgets.tribe_mini_calendar_widget table {
+  margin-top: 0;
+}
+
+.sidebar-widgets.tribe_mini_calendar_widget table th {
+  background: transparent;
+}
+
+.sidebar-widgets.tribe_mini_calendar_widget table .tribe-mini-calendar-nav {
+  border: none;
+  background: transparent;
+}
+
+#content .tribe_mini_calendar_widget table,
+#dashboard-widgets .tribe_mini_calendar_widget table,
+.thrive-layout-2_columns #user-content-widget-sidenav #page-sidebar-widgets .tribe_mini_calendar_widget table,
+#thrive_footer_widget .footer-widget .tribe_mini_calendar_widget table {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-bottom: none;
+  background: #fff;
+}
+
+#content .tribe_mini_calendar_widget table th,
+#dashboard-widgets .tribe_mini_calendar_widget table th,
+.thrive-layout-2_columns #user-content-widget-sidenav #page-sidebar-widgets .tribe_mini_calendar_widget table th,
+#thrive_footer_widget .footer-widget .tribe_mini_calendar_widget table th {
+  background: transparent;
+  padding: 10px;
+}
+
+#content .tribe_mini_calendar_widget table .tribe-mini-calendar-nav,
+#dashboard-widgets .tribe_mini_calendar_widget table .tribe-mini-calendar-nav,
+.thrive-layout-2_columns #user-content-widget-sidenav #page-sidebar-widgets .tribe_mini_calendar_widget table .tribe-mini-calendar-nav,
+#thrive_footer_widget .footer-widget .tribe_mini_calendar_widget table .tribe-mini-calendar-nav {
+  border: none;
+}
+
+#content .tribe_mini_calendar_widget table thead,
+#dashboard-widgets .tribe_mini_calendar_widget table thead,
+.thrive-layout-2_columns #user-content-widget-sidenav #page-sidebar-widgets .tribe_mini_calendar_widget table thead,
+#thrive_footer_widget .footer-widget .tribe_mini_calendar_widget table thead {
+  background: transparent;
+}
+
+#content .tribe_mini_calendar_widget table tr,
+#dashboard-widgets .tribe_mini_calendar_widget table tr,
+.thrive-layout-2_columns #user-content-widget-sidenav #page-sidebar-widgets .tribe_mini_calendar_widget table tr,
+#thrive_footer_widget .footer-widget .tribe_mini_calendar_widget table tr {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+#content .tribe_mini_calendar_widget table tr:hover,
+#dashboard-widgets .tribe_mini_calendar_widget table tr:hover,
+.thrive-layout-2_columns #user-content-widget-sidenav #page-sidebar-widgets .tribe_mini_calendar_widget table tr:hover,
+#thrive_footer_widget .footer-widget .tribe_mini_calendar_widget table tr:hover {
+  background: transparent;
+}
+
+#content .tribe_mini_calendar_widget table tr td,
+#dashboard-widgets .tribe_mini_calendar_widget table tr td,
+.thrive-layout-2_columns #user-content-widget-sidenav #page-sidebar-widgets .tribe_mini_calendar_widget table tr td,
+#thrive_footer_widget .footer-widget .tribe_mini_calendar_widget table tr td {
+  height: auto;
+  min-height: 40px;
+  background: transparent;
+  line-height: 40px;
+  padding: 0;
+  margin-bottom: 0;
+  border: none;
+}
+
+#content .tribe_mini_calendar_widget table tr td .tribe-mini-calendar-no-event,
+#content .tribe_mini_calendar_widget table tr td a,
+#dashboard-widgets .tribe_mini_calendar_widget table tr td .tribe-mini-calendar-no-event,
+#dashboard-widgets .tribe_mini_calendar_widget table tr td a,
+.thrive-layout-2_columns #user-content-widget-sidenav #page-sidebar-widgets .tribe_mini_calendar_widget table tr td .tribe-mini-calendar-no-event,
+.thrive-layout-2_columns #user-content-widget-sidenav #page-sidebar-widgets .tribe_mini_calendar_widget table tr td a,
+#thrive_footer_widget .footer-widget .tribe_mini_calendar_widget table tr td .tribe-mini-calendar-no-event,
+#thrive_footer_widget .footer-widget .tribe_mini_calendar_widget table tr td a {
+  color: rgba(0, 0, 0, 0.54);
+  padding: 0;
+  font-weight: normal;
+}
+
+#content .tribe_mini_calendar_widget table tr td a:hover,
+#dashboard-widgets .tribe_mini_calendar_widget table tr td a:hover,
+.thrive-layout-2_columns #user-content-widget-sidenav #page-sidebar-widgets .tribe_mini_calendar_widget table tr td a:hover,
+#thrive_footer_widget .footer-widget .tribe_mini_calendar_widget table tr td a:hover {
+  text-decoration: none;
+}
+
+#content .tribe_mini_calendar_widget table tr td.tribe-events-has-events.tribe-events-present a:hover,
+#content .tribe_mini_calendar_widget table tr td.tribe-events-has-events.tribe-mini-calendar-today a:hover,
+#content .tribe_mini_calendar_widget table tr td.tribe-events-has-events:hover a:hover,
+#dashboard-widgets .tribe_mini_calendar_widget table tr td.tribe-events-has-events.tribe-events-present a:hover,
+#dashboard-widgets .tribe_mini_calendar_widget table tr td.tribe-events-has-events.tribe-mini-calendar-today a:hover,
+#dashboard-widgets .tribe_mini_calendar_widget table tr td.tribe-events-has-events:hover a:hover,
+.thrive-layout-2_columns #user-content-widget-sidenav #page-sidebar-widgets .tribe_mini_calendar_widget table tr td.tribe-events-has-events.tribe-events-present a:hover,
+.thrive-layout-2_columns #user-content-widget-sidenav #page-sidebar-widgets .tribe_mini_calendar_widget table tr td.tribe-events-has-events.tribe-mini-calendar-today a:hover,
+.thrive-layout-2_columns #user-content-widget-sidenav #page-sidebar-widgets .tribe_mini_calendar_widget table tr td.tribe-events-has-events:hover a:hover,
+#thrive_footer_widget .footer-widget .tribe_mini_calendar_widget table tr td.tribe-events-has-events.tribe-events-present a:hover,
+#thrive_footer_widget .footer-widget .tribe_mini_calendar_widget table tr td.tribe-events-has-events.tribe-mini-calendar-today a:hover,
+#thrive_footer_widget .footer-widget .tribe_mini_calendar_widget table tr td.tribe-events-has-events:hover a:hover {
+  background: transparent;
+}
+
+#content .tribe_mini_calendar_widget table tr td.tribe-events-has-events a,
+#dashboard-widgets .tribe_mini_calendar_widget table tr td.tribe-events-has-events a,
+.thrive-layout-2_columns #user-content-widget-sidenav #page-sidebar-widgets .tribe_mini_calendar_widget table tr td.tribe-events-has-events a,
+#thrive_footer_widget .footer-widget .tribe_mini_calendar_widget table tr td.tribe-events-has-events a {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+#content .tribe_mini_calendar_widget table tr td.tribe-events-has-events a:before,
+#dashboard-widgets .tribe_mini_calendar_widget table tr td.tribe-events-has-events a:before,
+.thrive-layout-2_columns #user-content-widget-sidenav #page-sidebar-widgets .tribe_mini_calendar_widget table tr td.tribe-events-has-events a:before,
+#thrive_footer_widget .footer-widget .tribe_mini_calendar_widget table tr td.tribe-events-has-events a:before {
+  background: rgba(0, 0, 0, 0.54);
+}
+
+#content .tribe_mini_calendar_widget table tr td.tribe-events-present a,
+#dashboard-widgets .tribe_mini_calendar_widget table tr td.tribe-events-present a,
+.thrive-layout-2_columns #user-content-widget-sidenav #page-sidebar-widgets .tribe_mini_calendar_widget table tr td.tribe-events-present a,
+#thrive_footer_widget .footer-widget .tribe_mini_calendar_widget table tr td.tribe-events-present a {
+  color: #03a9f4;
+}
+
+#content .tribe_mini_calendar_widget table tr td.tribe-events-present a:before,
+#dashboard-widgets .tribe_mini_calendar_widget table tr td.tribe-events-present a:before,
+.thrive-layout-2_columns #user-content-widget-sidenav #page-sidebar-widgets .tribe_mini_calendar_widget table tr td.tribe-events-present a:before,
+#thrive_footer_widget .footer-widget .tribe_mini_calendar_widget table tr td.tribe-events-present a:before {
+  background: #03a9f4;
+}
+
+#content .tribe_mini_calendar_widget table th,
+#dashboard-widgets .tribe_mini_calendar_widget table th,
+.thrive-layout-2_columns #user-content-widget-sidenav #page-sidebar-widgets .tribe_mini_calendar_widget table th,
+#thrive_footer_widget .footer-widget .tribe_mini_calendar_widget table th {
+  color: rgba(0, 0, 0, 0.54);
+  margin-bottom: 0;
+  border: none;
+}
+
+#content .tribe_mini_calendar_widget table .tribe-mini-calendar-nav tr,
+#dashboard-widgets .tribe_mini_calendar_widget table .tribe-mini-calendar-nav tr,
+.thrive-layout-2_columns #user-content-widget-sidenav #page-sidebar-widgets .tribe_mini_calendar_widget table .tribe-mini-calendar-nav tr,
+#thrive_footer_widget .footer-widget .tribe_mini_calendar_widget table .tribe-mini-calendar-nav tr {
+  background: transparent;
+}
+
+#content .tribe_mini_calendar_widget table .tribe-mini-calendar-nav tr td,
+#dashboard-widgets .tribe_mini_calendar_widget table .tribe-mini-calendar-nav tr td,
+.thrive-layout-2_columns #user-content-widget-sidenav #page-sidebar-widgets .tribe_mini_calendar_widget table .tribe-mini-calendar-nav tr td,
+#thrive_footer_widget .footer-widget .tribe_mini_calendar_widget table .tribe-mini-calendar-nav tr td {
+  width: 100%;
+  background: transparent;
+  margin-bottom: 0;
+  border: none;
+}
+
+#content .tribe_mini_calendar_widget table .tribe-mini-calendar-nav tr td span,
+#dashboard-widgets .tribe_mini_calendar_widget table .tribe-mini-calendar-nav tr td span,
+.thrive-layout-2_columns #user-content-widget-sidenav #page-sidebar-widgets .tribe_mini_calendar_widget table .tribe-mini-calendar-nav tr td span,
+#thrive_footer_widget .footer-widget .tribe_mini_calendar_widget table .tribe-mini-calendar-nav tr td span {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+/*# sourceMappingURL=themepack.css.map */
