@@ -162,16 +162,62 @@ form {
     }
     .tribe-grid-allday .tribe-events-week-allday-single,
     .tribe-grid-body .tribe-events-week-hourly-single {
-        background: transparent;
+        max-height: 10px;
+        max-width: 10px;
+
+        background: #03a9f4;
+        margin: 2px;
+        display: inline-block;
+        float: left;
+
         border: none;
-        border-bottom: 1px solid #e0e0e0;
+        -webkit-border-radius: 50%;
+           -moz-border-radius: 50%;
+                border-radius: 50%;
+        position: relative;
+        .summary {
+            a {
+                font-size: 0;
+            }
+        }
+    }
+    .tribe-grid-allday {
+        .column {
+            padding: 4px 0;
+        }
+    }
+    .tribe-grid-body .tribe-events-week-hourly-single {
+        &:hover {
+            .summary {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+        .summary {
+            width: 10px;
+            padding: 0;
+            opacity: 0;
+            visibility: hidden;
+            overflow: visible;
 
-        -webkit-border-radius: 0;
-           -moz-border-radius: 0;
-                border-radius: 0;
+            position: relative;
+            left: -3.5px;
+            top: 10px;
+            a {
+                width: 1px;
+                background: #000;
+                margin: 0 auto;
 
-        a {
-            color: #0288d1;
+                &:before {
+                    content: "";
+                    border-radius: 50%;
+                    height: 10px;
+                    width: 10px;
+                    position: absolute;
+                    top: -13.5px;
+                    left: -3.5px;
+                }
+            }
         }
     }
 
