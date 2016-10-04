@@ -1,0 +1,155 @@
+body {
+    #tribe-community-events {
+        .events-community-post-title,
+        .events-community-post-content,
+        .tribe-events-community-details {
+            margin: 0 0 50px 0;
+            h4 {
+                margin-bottom: 15px;
+                label {
+                    margin: 0;
+                }
+            }
+        }
+
+        ul {
+            width: 100%;
+            padding: 0;
+            display: inline-block;
+            li {
+                list-style: none;
+            }
+        }
+
+        #event-categories {
+            ul:not(.tribe-categories-with-children) {
+                li {
+                    margin: 0;
+                    input[type='checkbox'] {
+                        position: relative;
+                        top: 2.5px;
+                    }
+                }
+            }
+        }
+        .pagination {
+             .current {
+                 background-color: #03a9f4;
+             }
+             a {
+                 background-color: #0288d1;
+                 box-shadow: 0 1.5px 1px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.12);
+
+                 -webkit-transition: all 0.25s ease-in-out;
+                 -moz-transition: all 0.25s ease-in-out;
+                 transition: all 0.25s ease-in-out;
+
+                 &:hover {
+                     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.23), 0 3px 12px rgba(0, 0, 0, 0.16);
+                 }
+             }
+        }
+    }
+    #content {
+        .my-events-table-wrapper {
+            .events-community  {
+                margin: 0;
+            }
+        }
+
+        .tribe-community-event-info {
+            box-shadow: none;
+            td {
+                padding: 0;
+            }
+            #google_map_toggle,
+            #google_map_link_toggle {
+                td {
+                    input[type='checkbox'] {
+                        position: relative;
+                        top: 10.5px;
+                    }
+                }
+            }
+            &#event-meta {
+                input[type='radio'],
+                input[type='checkbox'] {
+                    position: relative;
+                    top: 2.5px;
+                }
+            }
+        }
+    }
+    #ui-datepicker-div {
+        width: auto!important;
+        @media(max-width: 480px) {
+            left: auto!important;
+            right: 15px!important;
+        }
+        .ui-datepicker-calendar td a {
+            @media (max-width: 375px) {
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+            }
+        }
+    }
+    .ui-datepicker-title {
+        padding: 0;
+        width: 80%;
+    }
+    .ui-datepicker-group {
+        border-left: 1px solid rgba(0, 0, 0, 0.12);
+    }
+    .ui-datepicker-buttonpane {
+        button {
+            &.ui-state-hover,
+            &.ui-state-default {
+                background: #03a9f4;
+                color: #fff;
+                font-weight: normal;
+                padding: 0 25px;
+
+                border: none;
+                -webkit-border-radius: 2px;
+                   -moz-border-radius: 2px;
+                        border-radius: 2px;
+                opacity: 1;
+            }
+        }
+    }
+
+    .ui-datepicker {
+        .ui-datepicker-calendar {
+            margin: 0;
+            tr {
+                border-right: none;
+                border-left: none;
+                td {
+                    line-height: 40px;
+                    a {
+                        background: none;
+                        padding: 0;
+                        @media (max-width: 375px) {
+                            width: 40px;
+                            height: 40px;
+                        }
+                    }
+                }
+            }
+        }
+        .ui-datepicker-header {
+            .ui-datepicker-prev,
+            .ui-datepicker-next {
+                color: rgba(0, 0, 0, 0.54);
+                .ui-icon {
+                    display: none;
+                }
+            }
+            .ui-state-hover {
+                background: none;
+                color: #03a9f4;
+            }
+        }
+    }
+}
